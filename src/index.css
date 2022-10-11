@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', Arial, Helvetica, Verdana, sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', Tahoma, Arial, Helvetica, Verdana, sans-serif';
+}
+
+.background {
+    background: #f6f9fc;
+    padding: 50px 0;
+}
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+}
+.bg-header{
+    display: flex;
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #263238;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.img-logo{
+    margin: 0 auto;
+    margin-bottom: 30px;   
+}
+.img-logo img{
+    width: 500px;
+}
+.search-style{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.search-style input{
+    width: 450px;
+    padding: 15px;
+    background-color: #fff;
+    border: none;
+    border-radius: 35px;
+}
+.search-style input:focus{
+    outline: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 1200px; */
+}
+.btn-search{
+    border: none;
+    border-radius: 4px;
+    color: #263238;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+.box-pill{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    grid-gap: 10px;
+    align-items: center; 
+    margin: 10px 10px;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #f0f2f4;
+    opacity: .9;
+    /* color: #fff; */
+}
+.box-pill .img{
+    display: flex;
+    justify-content: center;
+    /* background-color: #fff; */
+    /* width: 50px; */
+    /* height: 50px; */
+    border-radius: 50%;
+    align-items: center;
+}
+.pokedex-title{
+    margin: 10px 0;
+}
+.pokedex-grip{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 10px;
+    padding: 0 10px;
+}
+
+.pokemon-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #a1d1d374;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+.img-pokemon{
+    width: 150px;
+    height: 150px;
+    /* padding: 10px; */
+}
+.img-pokemon img{
+    width: 100%;
+    margin: 0 25%;
+}
+.pokemon-card h3{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.footer-card{
+    width: 100%;
+    display: flex;
+}
+.pokemon-type{
+    display: flex;
+    margin: 0 auto;
+}
+.pokemon-type-text{    
+    margin: 3px 3px;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 15px;
+    background-color: aqua;
+}
