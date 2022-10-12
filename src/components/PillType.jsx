@@ -8,11 +8,12 @@ const PillType = () => {
     return (
         <>
             <div className="flex">
+                <div className='box-pill-1'>
+                    <p>All</p>
+                </div>
                 {typeItems.map((typeItem, index) => (
 
-                    <div className="box-pill" key={index} style={{
-                        // backgroundColor: (typeItem.color),
-                    }}>
+                    <div className="box-pill" key={index} >
                         <div className="img">
                             <img src={typeItem.cover} alt="Img Types" />
                         </div>

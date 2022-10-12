@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import { searchPokemon } from '../data/api'
 
 const Formulario = (props) => {
     const { onSearch } = props

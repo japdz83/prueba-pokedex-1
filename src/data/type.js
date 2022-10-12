@@ -18,11 +18,6 @@ import WaterImg from '../assets/types/water.svg'
 const Data = {
     typeItems: [
         {
-            id: 1,
-            name: 'All',
-            color: '#b9f8eb'
-        },
-        {
             id: 2,
             cover: BugImg,
             name: 'Bug',

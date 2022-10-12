@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Pokedex from './components/Pokedex'
+import Spinner from './components/Spinner'
 import Types from './components/Types'
 import { getPokemons, getPokemonData, searchPokemon } from './data/api'
 
@@ -9,6 +10,7 @@ import { getPokemons, getPokemonData, searchPokemon } from './data/api'
 function App() {
 
   const [pokemons, setPokemons] = useState([])
+  const [loading, setLoading] = useState(true)
 
   const listPokemon = async () => {
     try {
@@ -18,6 +20,7 @@ function App() {
       })
       const results = await Promise.all(promise)
       setPokemons(results)
+      setLoading(false);
       // console.log(results);
     } catch (error) {
       console.log(error)
@@ -36,16 +39,20 @@ function App() {
     } else {
       setPokemons([result])
     }
-
   }
-
 
   return (
     <div >
       <Header onSearch={onSearch} />
       <div className="container">
         <Types />
-        <Pokedex pokemons={pokemons} />
+        {
+          loading ? (
+            <Spinner />
+          ) : (
+            <Pokedex pokemons={pokemons} />
+          )
+        }
       </div>
     </div>
   )

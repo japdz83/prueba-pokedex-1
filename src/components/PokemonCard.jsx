@@ -1,9 +1,10 @@
 import React from 'react'
-
-
+import Data from '../data/type'
 
 
 const PokemonCard = (props) => {
+    const { typeItems } = Data;
+
     const { pokemon } = props
 
 
@@ -20,7 +21,9 @@ const PokemonCard = (props) => {
                     {
                         pokemon.types.map((type, index) => {
                             return (
-                                <div className='pokemon-type-text' key={index}>{type.type.name}</div>
+                                <div className={`${type.type.name} pokemon-type-text`} key={index}>
+                                    {type.type.name}
+                                </div>
                             )
                         })
                     }
